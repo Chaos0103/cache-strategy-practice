@@ -1,4 +1,4 @@
-package practice.cache_strategy.config;
+package practice.cache_strategy.redisconfig;
 
 
 import org.springframework.cache.CacheManager;

@@ -13,7 +13,7 @@ import java.util.List;
  * V1: 캐시 미적용 서비스
  */
 @Slf4j
-@Service
+//@Service
 @Transactional
 @RequiredArgsConstructor
 public class ProductServiceV1 implements ProductService {
