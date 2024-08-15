@@ -1,0 +1,15 @@
+### save product
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "productName": "productA",
+  "price": 1000,
+  "quantity": 10
+}
+
+### get products
+GET http://localhost:8080/products
+
+### get product
+GET http://localhost:8080/products/1
