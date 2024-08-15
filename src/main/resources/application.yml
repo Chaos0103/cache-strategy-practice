@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: cache-strategy
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:cacheStrategyApplication
+    username: sa
+    password:
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        default_batch_fetch_size: 100
+  h2:
+    console:
+      enabled: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    practice.cache_strategy: debug
